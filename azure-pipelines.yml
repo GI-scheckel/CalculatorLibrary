@@ -23,7 +23,7 @@ steps:
 
 - script: |
     . venv/bin/activate
-    pylint -f msvs *
+    pylint *
     pytest -v --cov=calculator
   displayName: 'Run the pylint & pytest'
 
