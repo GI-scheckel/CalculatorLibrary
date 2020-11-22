@@ -23,6 +23,10 @@ steps:
 
 - script: |
     . venv/bin/activate
-    flake8 --exclude=venv* --statistics
+    pylint -f msvs *
     pytest -v --cov=calculator
-  displayName: 'Run the pytest'
+  displayName: 'Run the pylint & pytest'
+
+# removed flake8 from 'Run pytest '
+# flake8 --exclude=venv* --statistics
+    
