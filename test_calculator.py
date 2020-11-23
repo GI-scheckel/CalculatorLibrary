@@ -7,13 +7,14 @@ import calculator
 
 class TestCalculator:
     """
+    Class to test the calculator.py file
     """
 
     def test_addition(self):
-        assert 4 == calculator.add(1, 3)
+        assert calculator.add(1, 3) == 4 
 
     def test_subtraction(self):
-        assert 2 == calculator.subtract(4, 2)
+        assert calculator.subtract(4, 2) == 2 
 
     def test_multiplication(self):
-        assert 100 == calculator.multiply(10, 10)
+        assert calculator.multiply(10, 10) == 100 
