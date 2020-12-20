@@ -24,7 +24,7 @@ steps:
 - script: |
     . venv/bin/activate
     pylint calculator.py
-    pytest -v --cov=calculator
+    pytest -v --cov=calculator.py
   displayName: 'Run the pylint & pytest'
 
 # removed flake8 from 'Run pytest '
