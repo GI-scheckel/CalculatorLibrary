@@ -19,4 +19,4 @@ class TestCalculator:
 
     def test_multiplication(self):
         """ Test for the multiply function """
-        assert calculator.multiply(10, 10) == 100
+        assert calculator.multiply(10, 100) == 1000
